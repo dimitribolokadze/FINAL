@@ -43,7 +43,7 @@ function createProductElement(product) {
   productElement.appendChild(priceElement);
 
   productElement.addEventListener("click", function () {
-    // Redirect to a new HTML page
+    // ახალი HTMLზე გადასვლა
     window.location.href = "product.html?id=" + product.id;
   });
   return productElement;

@@ -1,12 +1,10 @@
-// script.js
 document.addEventListener("DOMContentLoaded", function () {
   const productList = document.getElementById("productList");
 
-  // Fetch products from the API
   fetch("https://fakestoreapi.com/products")
     .then((response) => response.json())
     .then((products) => {
-      // Generate product list
+      // list
       products.forEach((product) => {
         const productWrapper = document.createElement("div");
         productWrapper.classList.add("products-wrapper");
