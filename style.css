@@ -184,6 +184,7 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 25px;
+  gap: 20px;
 }
 
 .product {

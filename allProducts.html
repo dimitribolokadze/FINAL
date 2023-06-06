@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Products</title>
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="allProducts.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">
+        <li><a href="/">MUO</a></li>
+      </div>
+
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- USING CHECKBOX FOR HAMBURGER MENU -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li><a href="./allProducts.html">Products</a></li>
+          <li>
+            <a href="/">
+              <img src="./assets/icons8-checkout-100.png" alt="checkout" />
+            </a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div id="productList"></div>
+
+    <script src="./allProducts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.products-wrapper {
+  width: 250px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.products-wrapper img {
+  max-width: 100%;
+  max-height: 50%;
+}
+.products-wrapper:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
