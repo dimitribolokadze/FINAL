@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="checkout.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <section class="logo">
+        <li><a href="/">MUO</a></li>
+      </section>
+    </nav>
+
+    <div class="container">
+      <h2>Product Checkout</h2>
+      <div class="product-info">
+        <p>Product: <span id="product-name">Example Product</span></p>
+        <p>Price: $<span id="product-price">10</span></p>
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+        <span class="error-message" id="name-error"></span>
+      </div>
+
+      <div class="form-group">
+        <div class="quantity-group">
+          <span class="quantity-label">Quantity:</span>
+          <div class="quantity-buttons">
+            <button class="quantity-button" onclick="decreaseQuantity()">
+              -
+            </button>
+            <input
+              type="number"
+              id="quantity"
+              min="1"
+              value="1"
+              oninput="calculateTotal()"
+            />
+            <button class="quantity-button" onclick="increaseQuantity()">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="total-price">Total: $<span id="total-price">0</span></p>
+      <button class="calculate-button" onclick="validateCheckout()">
+        Checkout
+      </button>
+      <p class="notification" id="thank-you-message"></p>
+    </div>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.product-info {
+  margin-bottom: 20px;
+}
+
+.product-info p {
+  margin: 0;
+  color: #666666;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.quantity-group {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-label {
+  margin-right: 10px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.quantity-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #cccccc;
+  color: #333333;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.quantity-button:hover {
+  background-color: #aaaaaa;
+}
+
+.total-price {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333333;
+}
+
+.calculate-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+  background-color: #45a049;
+}
+
+.notification {
+  display: none;
+  background-color: #4caf50;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+}
