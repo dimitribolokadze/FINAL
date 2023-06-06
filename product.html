@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">
+        <li><a href="/">MUO</a></li>
+      </div>
+
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- USING CHECKBOX FOR HAMBURGER MENU -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li><a href="./allProducts.html">Products</a></li>
+          <li>
+            <a href="/">
+              <img src="./assets/icons8-checkout-100.png" alt="checkout" />
+            </a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <main>
+      <div id="productDetails">
+        <h2>Loading...</h2>
+      </div>
+    </main>
+    <script src="./product.js"></script>
+  </body>
+</html>
